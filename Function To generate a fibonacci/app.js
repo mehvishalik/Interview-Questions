@@ -18,10 +18,8 @@
 //loops
 function fibonacciSeries(n, a = 0, b = 1) {
   if (n <= 0) return;
-  
-  console.log(a); // Print the current Fibonacci number
-  fibonacciSeries(n - 1, b, a + b); // Recursive call with updated values
+  console.log(a);
+  fibonacciSeries(n - 1, b, a + b);
 }
-
-let n = 10; // Number of terms
+let n = 10;
 fibonacciSeries(n);
